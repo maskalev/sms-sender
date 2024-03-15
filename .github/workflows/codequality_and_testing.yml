@@ -15,6 +15,7 @@ jobs:
   testing:
     needs: codequality
     runs-on: ubuntu-latest
+    environment: test
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python
@@ -27,5 +28,6 @@ jobs:
           DEBUG: ${{ secrets.DEBUG }}
           API_URL: ${{ secrets.API_URL }}
           API_TOKEN: ${{ secrets.API_TOKEN }}
-        run: |
+        run:
+          echo "$DEBUG"
           ./run_tests.sh
