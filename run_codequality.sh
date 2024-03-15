@@ -1,5 +1,5 @@
 #!/bin/bash
 
-pip install isort black
+pip install -r requirements-codequality.txt
 isort --profile black --line-length 79 . --check --diff
 black --line-length 79 . --check --diff
