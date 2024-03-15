@@ -14,8 +14,8 @@ The API includes endpoints for:
 - managing mailings (adding, editing, deleting, retrieving statistics - both
   overall and per each mailing)
 
-For integration with other projects, there is an external service with its own
-API.
+For integration with other projects, there is [an external service with its own
+API](#external-service-api-description).
 
 ### Technologies
 
@@ -26,7 +26,6 @@ API.
 3. Celery
    
 4. PostgreSQL
-
 
 ### To deploy the project locally, follow these main steps:
 
@@ -474,3 +473,35 @@ curl -X DELETE http://localhost:8000/api/v1/mailings/3/
     2024-02-14 08:47:44,079 INFO signals Mailing_1 updated. Attributes: {'_state': <django.db.models.base.ModelState object at 0x7fc54d3ec650>, 'id': 1, 'datetime_start': datetime.datetime(2024, 2, 12, 12, 14, tzinfo=datetime.timezone.utc), 'datetime_end': datetime.datetime(2024, 3, 11, 20, 15, tzinfo=datetime.timezone.utc), 'text': 'Some text', 'client_filter': None, 'send_interval_time_start': None, 'send_interval_time_end': None, 'clients_count': 3, 'created_messages': 3, 'scheduled_messages': 0, 'delivered_messages': 3, 'undelivered_messages': 0, 'cancelled_messages': 0, 'created_at': datetime.datetime(2024, 2, 14, 8, 47, 43, 458076, tzinfo=datetime.timezone.utc), 'updated_at': datetime.datetime(2024, 2, 14, 8, 47, 43, 458082, tzinfo=datetime.timezone.utc)}
     2024-02-14 08:47:44,079 INFO signals Message_2 updated. Attributes: {'_state': <django.db.models.base.ModelState object at 0x7fc54d2b5b10>, 'id': 2, 'datetime_send': datetime.datetime(2024, 2, 14, 8, 47, 43, 470083, tzinfo=datetime.timezone.utc), 'status': Message.Status.DELIVERED, 'mailing_id': 1, 'client_id': 2, 'celery_task_id': 'b48c3a08-46fb-47ac-804d-e93bc989bdef', 'created_at': datetime.datetime(2024, 2, 14, 8, 47, 43, 470108, tzinfo=datetime.timezone.utc), 'updated_at': datetime.datetime(2024, 2, 14, 8, 47, 43, 470111, tzinfo=datetime.timezone.utc)}
    ```
+
+### External Service API Description:
+
+#### Add mailing:
+
+`POST /send/{msgId}`
+
+#### Request
+
+Parameters:
+
+`msgId` - (int, required), message ID
+
+Body:
+
+`id` - (int, required), message ID
+
+`phone`	- (int, required), client's phone number
+
+`text` - (str, required), message text
+
+#### Responce
+
+Success (status_code = 200)
+
+Body:
+
+`code` - (int), status code
+
+`message` -(str), message text
+
+Unsuccess (status_code = 400)
