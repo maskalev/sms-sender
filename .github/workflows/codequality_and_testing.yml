@@ -15,7 +15,6 @@ jobs:
   testing:
     needs: codequality
     runs-on: ubuntu-latest
-    environment: test
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python
@@ -25,7 +24,7 @@ jobs:
       - name: Test with pytest
         env:
           SECRET_KEY: ${{ secrets.SECRET_KEY }}
-          DEBUG: True
+          DEBUG: ${{ secrets.DEBUG }}
           API_URL: ${{ secrets.API_URL }}
           API_TOKEN: ${{ secrets.API_TOKEN }}
         run: |
