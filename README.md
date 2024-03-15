@@ -64,7 +64,7 @@ git clone git@github.com:maskalev/sms-sender.git
 sudo docker compose up -d --build
 ```
 
-1. Create and make migrations
+4. Create and make migrations
    
 ```shell
 sudo docker compose exec -T app python3 manage.py makemigrations api --no-input

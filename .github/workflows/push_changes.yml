@@ -1,0 +1,5 @@
+name: Push changes
+on: [push, pull_request]
+jobs:
+  codequality_and_testing:
+    uses: ./.github/workflows/codequality_and_testing.yml

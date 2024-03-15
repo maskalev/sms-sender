@@ -1,0 +1,26 @@
+name: Codequality and testing
+on: [workflow_call]
+jobs:
+  codequality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - name: Codequality
+        run: |
+          ./run_codequality.sh
+  testing:
+    needs: codequality
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+            python-version: "3.10"
+      - name: Test with pytest
+        run: |
+          ./run_tests.sh
