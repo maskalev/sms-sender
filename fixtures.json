@@ -1,0 +1,1191 @@
+[
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2024-02-14T08:56:07.967Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "3",
+            "object_repr": "Mailing object (3)",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Client filter\"]}}]"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 4,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 4,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 4,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 4,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 5,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 5,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 5,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 5,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 6,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 6,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 6,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 6,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add task result",
+            "content_type": 7,
+            "codename": "add_taskresult"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change task result",
+            "content_type": 7,
+            "codename": "change_taskresult"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete task result",
+            "content_type": 7,
+            "codename": "delete_taskresult"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view task result",
+            "content_type": 7,
+            "codename": "view_taskresult"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add chord counter",
+            "content_type": 8,
+            "codename": "add_chordcounter"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change chord counter",
+            "content_type": 8,
+            "codename": "change_chordcounter"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete chord counter",
+            "content_type": 8,
+            "codename": "delete_chordcounter"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view chord counter",
+            "content_type": 8,
+            "codename": "view_chordcounter"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 33,
+        "fields": {
+            "name": "Can add group result",
+            "content_type": 9,
+            "codename": "add_groupresult"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 34,
+        "fields": {
+            "name": "Can change group result",
+            "content_type": 9,
+            "codename": "change_groupresult"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 35,
+        "fields": {
+            "name": "Can delete group result",
+            "content_type": 9,
+            "codename": "delete_groupresult"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 36,
+        "fields": {
+            "name": "Can view group result",
+            "content_type": 9,
+            "codename": "view_groupresult"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 37,
+        "fields": {
+            "name": "Can add client",
+            "content_type": 10,
+            "codename": "add_client"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 38,
+        "fields": {
+            "name": "Can change client",
+            "content_type": 10,
+            "codename": "change_client"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 39,
+        "fields": {
+            "name": "Can delete client",
+            "content_type": 10,
+            "codename": "delete_client"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 40,
+        "fields": {
+            "name": "Can view client",
+            "content_type": 10,
+            "codename": "view_client"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 41,
+        "fields": {
+            "name": "Can add message",
+            "content_type": 11,
+            "codename": "add_message"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 42,
+        "fields": {
+            "name": "Can change message",
+            "content_type": 11,
+            "codename": "change_message"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 43,
+        "fields": {
+            "name": "Can delete message",
+            "content_type": 11,
+            "codename": "delete_message"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 44,
+        "fields": {
+            "name": "Can view message",
+            "content_type": 11,
+            "codename": "view_message"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 45,
+        "fields": {
+            "name": "Can add mailing",
+            "content_type": 12,
+            "codename": "add_mailing"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 46,
+        "fields": {
+            "name": "Can change mailing",
+            "content_type": 12,
+            "codename": "change_mailing"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 47,
+        "fields": {
+            "name": "Can delete mailing",
+            "content_type": 12,
+            "codename": "delete_mailing"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 48,
+        "fields": {
+            "name": "Can view mailing",
+            "content_type": 12,
+            "codename": "view_mailing"
+        }
+    },
+    {
+        "model": "auth.group",
+        "pk": 1,
+        "fields": {
+            "name": "Client manage group",
+            "permissions": [
+                25,
+                26,
+                27,
+                28
+            ]
+        }
+    },
+    {
+        "model": "auth.group",
+        "pk": 2,
+        "fields": {
+            "name": "Mailing manage group",
+            "permissions": [
+                29,
+                30,
+                31,
+                32
+            ]
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$J0aE2CzhyVasFq4DT3stps$QY1zTYzwfkP0zlCECYAcy5Ej3xlEcrN/yrE+Dew62Ig=",
+            "last_login": "2024-02-14T08:35:01.297Z",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-02-14T08:34:49.637Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "auth",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "api",
+            "model": "client"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 8,
+        "fields": {
+            "app_label": "api",
+            "model": "mailing"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "wckvbjdfyuo6b5i09f73hqsm4wh7sghi",
+        "fields": {
+            "session_data": ".eJxVjEsOAiEQBe_C2hAQehpcup8zkAYaGTWQzGdlvLtOMgvdvqp6LxFoW2vYFp7DlMVFaHH63SKlB7cd5Du1W5ept3WeotwVedBFjj3z83q4fweVlvqtgY3TzhaffKJMOLD2WIgiQS7JkuVEFtE6AAZEBmMGpc6DN1ExQhHvD_5gOBg:1raAjN:EeBz4YeQmyXOPKmpy_KPUw7p0VYWgHnKskBKf4nGHmE",
+            "expire_date": "2024-02-28T08:35:01.300Z"
+        }
+    },
+    {
+        "model": "api.client",
+        "pk": 1,
+        "fields": {
+            "phone": "71230000001",
+            "operator_code": "123",
+            "tag": null,
+            "time_zone": "Europe/Moscow",
+            "created_at": "2024-02-14T08:42:49.704Z",
+            "updated_at": "2024-02-14T08:44:59.111Z"
+        }
+    },
+    {
+        "model": "api.client",
+        "pk": 2,
+        "fields": {
+            "phone": "71230000002",
+            "operator_code": "123",
+            "tag": null,
+            "time_zone": "UTC",
+            "created_at": "2024-02-14T08:45:30.556Z",
+            "updated_at": "2024-02-14T08:45:30.556Z"
+        }
+    },
+    {
+        "model": "api.client",
+        "pk": 3,
+        "fields": {
+            "phone": "71230000003",
+            "operator_code": "123",
+            "tag": null,
+            "time_zone": "UTC",
+            "created_at": "2024-02-14T08:45:34.457Z",
+            "updated_at": "2024-02-14T08:45:34.457Z"
+        }
+    },
+    {
+        "model": "api.mailing",
+        "pk": 1,
+        "fields": {
+            "datetime_start": "2024-02-12T12:14:00Z",
+            "datetime_end": "2024-03-11T20:15:00Z",
+            "text": "Some text",
+            "client_filter": null,
+            "send_interval_time_start": null,
+            "send_interval_time_end": null,
+            "clients_count": 3,
+            "created_messages": 3,
+            "scheduled_messages": 0,
+            "delivered_messages": 3,
+            "undelivered_messages": 0,
+            "cancelled_messages": 0,
+            "created_at": "2024-02-14T08:47:43.458Z",
+            "updated_at": "2024-02-14T08:47:43.458Z"
+        }
+    },
+    {
+        "model": "api.mailing",
+        "pk": 2,
+        "fields": {
+            "datetime_start": "2024-02-12T12:14:00Z",
+            "datetime_end": "2024-03-12T20:15:00Z",
+            "text": "Text",
+            "client_filter": null,
+            "send_interval_time_start": null,
+            "send_interval_time_end": null,
+            "clients_count": 3,
+            "created_messages": 3,
+            "scheduled_messages": 0,
+            "delivered_messages": 3,
+            "undelivered_messages": 0,
+            "cancelled_messages": 0,
+            "created_at": "2024-02-14T08:48:46.213Z",
+            "updated_at": "2024-02-14T08:48:46.213Z"
+        }
+    },
+    {
+        "model": "api.mailing",
+        "pk": 3,
+        "fields": {
+            "datetime_start": "2024-03-12T12:14:00Z",
+            "datetime_end": "2024-03-12T20:15:00Z",
+            "text": "Text",
+            "client_filter": "123",
+            "send_interval_time_start": null,
+            "send_interval_time_end": null,
+            "clients_count": 3,
+            "created_messages": 12,
+            "scheduled_messages": 6,
+            "delivered_messages": 0,
+            "undelivered_messages": 0,
+            "cancelled_messages": 6,
+            "created_at": "2024-02-14T08:49:17.021Z",
+            "updated_at": "2024-02-14T09:09:44.545Z"
+        }
+    },
+    {
+        "model": "api.mailing",
+        "pk": 4,
+        "fields": {
+            "datetime_start": "2024-03-12T12:14:00Z",
+            "datetime_end": "2024-03-12T20:15:00Z",
+            "text": "Text",
+            "client_filter": "123",
+            "send_interval_time_start": null,
+            "send_interval_time_end": null,
+            "clients_count": 3,
+            "created_messages": 6,
+            "scheduled_messages": 3,
+            "delivered_messages": 0,
+            "undelivered_messages": 0,
+            "cancelled_messages": 3,
+            "created_at": "2024-02-14T09:10:10.873Z",
+            "updated_at": "2024-02-14T09:10:16.447Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 1,
+        "fields": {
+            "datetime_send": "2024-02-14T08:47:43.463Z",
+            "status": "DL",
+            "mailing": 1,
+            "client": 1,
+            "celery_task_id": "5ac55c54-c79d-4c71-b89d-c903be7921a0",
+            "created_at": "2024-02-14T08:47:43.463Z",
+            "updated_at": "2024-02-14T08:47:43.463Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 2,
+        "fields": {
+            "datetime_send": "2024-02-14T08:47:43.470Z",
+            "status": "DL",
+            "mailing": 1,
+            "client": 2,
+            "celery_task_id": "b48c3a08-46fb-47ac-804d-e93bc989bdef",
+            "created_at": "2024-02-14T08:47:43.470Z",
+            "updated_at": "2024-02-14T08:47:43.470Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 3,
+        "fields": {
+            "datetime_send": "2024-02-14T08:47:43.474Z",
+            "status": "DL",
+            "mailing": 1,
+            "client": 3,
+            "celery_task_id": "0e088ef0-b877-45e2-910f-9eab432b3985",
+            "created_at": "2024-02-14T08:47:43.474Z",
+            "updated_at": "2024-02-14T08:47:43.474Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 4,
+        "fields": {
+            "datetime_send": "2024-02-14T08:48:46.217Z",
+            "status": "DL",
+            "mailing": 2,
+            "client": 1,
+            "celery_task_id": "21bb6103-483a-4d4e-ad0d-8964b292fdfd",
+            "created_at": "2024-02-14T08:48:46.217Z",
+            "updated_at": "2024-02-14T08:48:46.217Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 5,
+        "fields": {
+            "datetime_send": "2024-02-14T08:48:46.222Z",
+            "status": "DL",
+            "mailing": 2,
+            "client": 2,
+            "celery_task_id": "ef2693e9-c300-4019-946c-3b59e14d6ff9",
+            "created_at": "2024-02-14T08:48:46.222Z",
+            "updated_at": "2024-02-14T08:48:46.222Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 6,
+        "fields": {
+            "datetime_send": "2024-02-14T08:48:46.226Z",
+            "status": "DL",
+            "mailing": 2,
+            "client": 3,
+            "celery_task_id": "2a0ee55e-6f98-4875-8b08-c5c45f35eb9e",
+            "created_at": "2024-02-14T08:48:46.226Z",
+            "updated_at": "2024-02-14T08:48:46.226Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 7,
+        "fields": {
+            "datetime_send": "2024-02-14T08:49:17.025Z",
+            "status": "CA",
+            "mailing": 3,
+            "client": 1,
+            "celery_task_id": "3c93c508-b35f-4bd9-a030-4b63ce792701",
+            "created_at": "2024-02-14T08:49:17.025Z",
+            "updated_at": "2024-02-14T08:49:17.025Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 8,
+        "fields": {
+            "datetime_send": "2024-02-14T08:49:17.030Z",
+            "status": "CA",
+            "mailing": 3,
+            "client": 2,
+            "celery_task_id": "fa885db0-5cb7-4cf8-b3b9-3c155a65cc35",
+            "created_at": "2024-02-14T08:49:17.030Z",
+            "updated_at": "2024-02-14T08:49:17.030Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 9,
+        "fields": {
+            "datetime_send": "2024-02-14T08:49:17.033Z",
+            "status": "CA",
+            "mailing": 3,
+            "client": 3,
+            "celery_task_id": "b39d5d00-0ece-46ae-aec9-2c2eb7be26c1",
+            "created_at": "2024-02-14T08:49:17.033Z",
+            "updated_at": "2024-02-14T08:49:17.033Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 10,
+        "fields": {
+            "datetime_send": "2024-02-14T08:56:07.918Z",
+            "status": "CA",
+            "mailing": 3,
+            "client": 3,
+            "celery_task_id": "34d0fec8-d0a1-4db1-a320-32f4c753d808",
+            "created_at": "2024-02-14T08:56:07.918Z",
+            "updated_at": "2024-02-14T08:56:07.918Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 11,
+        "fields": {
+            "datetime_send": "2024-02-14T08:56:07.939Z",
+            "status": "CA",
+            "mailing": 3,
+            "client": 2,
+            "celery_task_id": "ea48d1f0-576f-474d-a29d-763a59bc7aa5",
+            "created_at": "2024-02-14T08:56:07.939Z",
+            "updated_at": "2024-02-14T08:56:07.939Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 12,
+        "fields": {
+            "datetime_send": "2024-02-14T08:56:07.952Z",
+            "status": "CA",
+            "mailing": 3,
+            "client": 1,
+            "celery_task_id": "b3d5691c-029b-444b-8de9-3fdf379828d1",
+            "created_at": "2024-02-14T08:56:07.952Z",
+            "updated_at": "2024-02-14T08:56:07.952Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 13,
+        "fields": {
+            "datetime_send": "2024-02-14T09:09:44.561Z",
+            "status": "SC",
+            "mailing": 3,
+            "client": 1,
+            "celery_task_id": "bb58acfb-b881-4039-96eb-1da5b0ea21b6",
+            "created_at": "2024-02-14T09:09:44.561Z",
+            "updated_at": "2024-02-14T09:09:44.561Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 14,
+        "fields": {
+            "datetime_send": "2024-02-14T09:09:44.612Z",
+            "status": "SC",
+            "mailing": 3,
+            "client": 2,
+            "celery_task_id": "b451c18c-adea-44fe-b3ea-1bd43ebf7339",
+            "created_at": "2024-02-14T09:09:44.612Z",
+            "updated_at": "2024-02-14T09:09:44.612Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 15,
+        "fields": {
+            "datetime_send": "2024-02-14T09:09:44.629Z",
+            "status": "SC",
+            "mailing": 3,
+            "client": 3,
+            "celery_task_id": "738d7b56-883d-4c91-b279-2c5c2863c45a",
+            "created_at": "2024-02-14T09:09:44.630Z",
+            "updated_at": "2024-02-14T09:09:44.630Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 16,
+        "fields": {
+            "datetime_send": "2024-02-14T09:09:44.652Z",
+            "status": "SC",
+            "mailing": 3,
+            "client": 3,
+            "celery_task_id": "9850b9e8-62a9-40f2-8d63-b4a67b42de59",
+            "created_at": "2024-02-14T09:09:44.652Z",
+            "updated_at": "2024-02-14T09:09:44.652Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 17,
+        "fields": {
+            "datetime_send": "2024-02-14T09:09:44.672Z",
+            "status": "SC",
+            "mailing": 3,
+            "client": 2,
+            "celery_task_id": "55ff7ffe-5937-4dd6-9811-8e5e55cfc6ea",
+            "created_at": "2024-02-14T09:09:44.672Z",
+            "updated_at": "2024-02-14T09:09:44.672Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 18,
+        "fields": {
+            "datetime_send": "2024-02-14T09:09:44.691Z",
+            "status": "SC",
+            "mailing": 3,
+            "client": 1,
+            "celery_task_id": "6001a1cd-1eb4-49d0-9811-f6bb2ca22608",
+            "created_at": "2024-02-14T09:09:44.691Z",
+            "updated_at": "2024-02-14T09:09:44.691Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 19,
+        "fields": {
+            "datetime_send": "2024-02-14T09:10:10.876Z",
+            "status": "CA",
+            "mailing": 4,
+            "client": 3,
+            "celery_task_id": "3a670c21-79b4-4603-9485-182d7f0f679a",
+            "created_at": "2024-02-14T09:10:10.877Z",
+            "updated_at": "2024-02-14T09:10:10.877Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 20,
+        "fields": {
+            "datetime_send": "2024-02-14T09:10:10.881Z",
+            "status": "CA",
+            "mailing": 4,
+            "client": 2,
+            "celery_task_id": "bff561e2-5859-4e9c-bcbd-9f2b01d91059",
+            "created_at": "2024-02-14T09:10:10.881Z",
+            "updated_at": "2024-02-14T09:10:10.881Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 21,
+        "fields": {
+            "datetime_send": "2024-02-14T09:10:10.884Z",
+            "status": "CA",
+            "mailing": 4,
+            "client": 1,
+            "celery_task_id": "4917722c-4080-4849-94c4-bb97675c64c5",
+            "created_at": "2024-02-14T09:10:10.884Z",
+            "updated_at": "2024-02-14T09:10:10.884Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 22,
+        "fields": {
+            "datetime_send": "2024-02-14T09:10:16.462Z",
+            "status": "SC",
+            "mailing": 4,
+            "client": 1,
+            "celery_task_id": "34a65b15-6418-4f32-aa33-08706acc0801",
+            "created_at": "2024-02-14T09:10:16.462Z",
+            "updated_at": "2024-02-14T09:10:16.462Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 23,
+        "fields": {
+            "datetime_send": "2024-02-14T09:10:16.477Z",
+            "status": "SC",
+            "mailing": 4,
+            "client": 2,
+            "celery_task_id": "613ed072-9c37-4d5e-ac73-ceeb2d8e4c15",
+            "created_at": "2024-02-14T09:10:16.477Z",
+            "updated_at": "2024-02-14T09:10:16.477Z"
+        }
+    },
+    {
+        "model": "api.message",
+        "pk": 24,
+        "fields": {
+            "datetime_send": "2024-02-14T09:10:16.492Z",
+            "status": "SC",
+            "mailing": 4,
+            "client": 3,
+            "celery_task_id": "828b7917-370a-4d87-a9ab-92dbca1de5ab",
+            "created_at": "2024-02-14T09:10:16.492Z",
+            "updated_at": "2024-02-14T09:10:16.492Z"
+        }
+    },
+    {
+        "model": "django_celery_results.taskresult",
+        "pk": 1,
+        "fields": {
+            "task_id": "95e56043-3ea1-4181-b9bb-6bd8a7478be4",
+            "periodic_task_name": null,
+            "task_name": "Statictics Email",
+            "task_args": "\"()\"",
+            "task_kwargs": "\"{}\"",
+            "status": "FAILURE",
+            "worker": "celery@d395a329d2b7",
+            "content_type": "application/json",
+            "content_encoding": "utf-8",
+            "result": "{\"exc_type\": \"ProgrammingError\", \"exc_message\": [\"relation \\\"api_message\\\" does not exist\\nLINE 1: SELECT COUNT(*) AS \\\"__count\\\" FROM \\\"api_message\\\" WHERE (\\\"api_...\\n                                          ^\\n\"], \"exc_module\": \"django.db.utils\"}",
+            "date_created": "2024-02-14T08:38:48.640Z",
+            "date_done": "2024-02-14T08:38:48.640Z",
+            "traceback": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py\", line 89, in _execute\n    return self.cursor.execute(sql, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/site-packages/django_prometheus/db/common.py\", line 69, in execute\n    return super().execute(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\npsycopg2.errors.UndefinedTable: relation \"api_message\" does not exist\nLINE 1: SELECT COUNT(*) AS \"__count\" FROM \"api_message\" WHERE (\"api_...\n                                          ^\n\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.11/site-packages/celery/app/trace.py\", line 477, in trace_task\n    R = retval = fun(*args, **kwargs)\n                 ^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/site-packages/celery/app/trace.py\", line 760, in __protected_call__\n    return self.run(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/code/api/tasks.py\", line 142, in send_daily_statistics_email\n    total_messages = messages.count()\n                     ^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/site-packages/django/db/models/query.py\", line 608, in count\n    return self.query.get_count(using=self.db)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py\", line 568, in get_count\n    return obj.get_aggregation(using, {\"__count\": Count(\"*\")})[\"__count\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/site-packages/django/db/models/sql/query.py\", line 554, in get_aggregation\n    result = compiler.execute_sql(SINGLE)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py\", line 1562, in execute_sql\n    cursor.execute(sql, params)\n  File \"/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py\", line 67, in execute\n    return self._execute_with_wrappers(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py\", line 80, in _execute_with_wrappers\n    return executor(sql, params, many, context)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py\", line 84, in _execute\n    with self.db.wrap_database_errors:\n  File \"/usr/local/lib/python3.11/site-packages/django/db/utils.py\", line 91, in __exit__\n    raise dj_exc_value.with_traceback(traceback) from exc_value\n  File \"/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py\", line 89, in _execute\n    return self.cursor.execute(sql, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.11/site-packages/django_prometheus/db/common.py\", line 69, in execute\n    return super().execute(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ndjango.db.utils.ProgrammingError: relation \"api_message\" does not exist\nLINE 1: SELECT COUNT(*) AS \"__count\" FROM \"api_message\" WHERE (\"api_...\n                                          ^\n\n",
+            "meta": "{\"children\": []}"
+        }
+    },
+    {
+        "model": "django_celery_results.taskresult",
+        "pk": 2,
+        "fields": {
+            "task_id": "753f0ab1-81a2-4d3c-be6b-6ac385322162",
+            "periodic_task_name": null,
+            "task_name": "Statictics Email",
+            "task_args": "\"()\"",
+            "task_kwargs": "\"{}\"",
+            "status": "SUCCESS",
+            "worker": "celery@4c62ed742550",
+            "content_type": "application/json",
+            "content_encoding": "utf-8",
+            "result": "null",
+            "date_created": "2024-02-14T08:42:17.350Z",
+            "date_done": "2024-02-14T08:42:17.351Z",
+            "traceback": null,
+            "meta": "{\"children\": []}"
+        }
+    },
+    {
+        "model": "django_celery_results.taskresult",
+        "pk": 3,
+        "fields": {
+            "task_id": "5ac55c54-c79d-4c71-b89d-c903be7921a0",
+            "periodic_task_name": null,
+            "task_name": "Mailing",
+            "task_args": "\"[1]\"",
+            "task_kwargs": "\"{}\"",
+            "status": "SUCCESS",
+            "worker": "celery@4c62ed742550",
+            "content_type": "application/json",
+            "content_encoding": "utf-8",
+            "result": "null",
+            "date_created": "2024-02-14T08:47:44.075Z",
+            "date_done": "2024-02-14T08:47:44.075Z",
+            "traceback": null,
+            "meta": "{\"children\": []}"
+        }
+    },
+    {
+        "model": "django_celery_results.taskresult",
+        "pk": 4,
+        "fields": {
+            "task_id": "0e088ef0-b877-45e2-910f-9eab432b3985",
+            "periodic_task_name": null,
+            "task_name": "Mailing",
+            "task_args": "\"[3]\"",
+            "task_kwargs": "\"{}\"",
+            "status": "SUCCESS",
+            "worker": "celery@4c62ed742550",
+            "content_type": "application/json",
+            "content_encoding": "utf-8",
+            "result": "null",
+            "date_created": "2024-02-14T08:47:44.082Z",
+            "date_done": "2024-02-14T08:47:44.082Z",
+            "traceback": null,
+            "meta": "{\"children\": []}"
+        }
+    },
+    {
+        "model": "django_celery_results.taskresult",
+        "pk": 5,
+        "fields": {
+            "task_id": "b48c3a08-46fb-47ac-804d-e93bc989bdef",
+            "periodic_task_name": null,
+            "task_name": "Mailing",
+            "task_args": "\"[2]\"",
+            "task_kwargs": "\"{}\"",
+            "status": "SUCCESS",
+            "worker": "celery@4c62ed742550",
+            "content_type": "application/json",
+            "content_encoding": "utf-8",
+            "result": "null",
+            "date_created": "2024-02-14T08:47:44.083Z",
+            "date_done": "2024-02-14T08:47:44.083Z",
+            "traceback": null,
+            "meta": "{\"children\": []}"
+        }
+    },
+    {
+        "model": "django_celery_results.taskresult",
+        "pk": 6,
+        "fields": {
+            "task_id": "2a0ee55e-6f98-4875-8b08-c5c45f35eb9e",
+            "periodic_task_name": null,
+            "task_name": "Mailing",
+            "task_args": "\"[6]\"",
+            "task_kwargs": "\"{}\"",
+            "status": "SUCCESS",
+            "worker": "celery@4c62ed742550",
+            "content_type": "application/json",
+            "content_encoding": "utf-8",
+            "result": "null",
+            "date_created": "2024-02-14T08:48:46.652Z",
+            "date_done": "2024-02-14T08:48:46.652Z",
+            "traceback": null,
+            "meta": "{\"children\": []}"
+        }
+    },
+    {
+        "model": "django_celery_results.taskresult",
+        "pk": 7,
+        "fields": {
+            "task_id": "21bb6103-483a-4d4e-ad0d-8964b292fdfd",
+            "periodic_task_name": null,
+            "task_name": "Mailing",
+            "task_args": "\"[4]\"",
+            "task_kwargs": "\"{}\"",
+            "status": "SUCCESS",
+            "worker": "celery@4c62ed742550",
+            "content_type": "application/json",
+            "content_encoding": "utf-8",
+            "result": "null",
+            "date_created": "2024-02-14T08:48:46.664Z",
+            "date_done": "2024-02-14T08:48:46.664Z",
+            "traceback": null,
+            "meta": "{\"children\": []}"
+        }
+    },
+    {
+        "model": "django_celery_results.taskresult",
+        "pk": 8,
+        "fields": {
+            "task_id": "ef2693e9-c300-4019-946c-3b59e14d6ff9",
+            "periodic_task_name": null,
+            "task_name": "Mailing",
+            "task_args": "\"[5]\"",
+            "task_kwargs": "\"{}\"",
+            "status": "SUCCESS",
+            "worker": "celery@4c62ed742550",
+            "content_type": "application/json",
+            "content_encoding": "utf-8",
+            "result": "null",
+            "date_created": "2024-02-14T08:48:46.691Z",
+            "date_done": "2024-02-14T08:48:46.691Z",
+            "traceback": null,
+            "meta": "{\"children\": []}"
+        }
+    },
+    {
+        "model": "django_celery_results.taskresult",
+        "pk": 9,
+        "fields": {
+            "task_id": "71a331c2-d5aa-4d18-a366-866bf3c784a4",
+            "periodic_task_name": null,
+            "task_name": "Statictics Email",
+            "task_args": "\"()\"",
+            "task_kwargs": "\"{}\"",
+            "status": "SUCCESS",
+            "worker": "celery@9c9a89f8cedf",
+            "content_type": "application/json",
+            "content_encoding": "utf-8",
+            "result": "null",
+            "date_created": "2024-02-14T09:05:50.940Z",
+            "date_done": "2024-02-14T09:05:50.940Z",
+            "traceback": null,
+            "meta": "{\"children\": []}"
+        }
+    },
+    {
+        "model": "django_celery_results.taskresult",
+        "pk": 10,
+        "fields": {
+            "task_id": "15d60d4e-999c-4a5a-bd30-c516033f298d",
+            "periodic_task_name": null,
+            "task_name": "Statictics Email",
+            "task_args": "\"()\"",
+            "task_kwargs": "\"{}\"",
+            "status": "SUCCESS",
+            "worker": "celery@537cbba9431d",
+            "content_type": "application/json",
+            "content_encoding": "utf-8",
+            "result": "null",
+            "date_created": "2024-02-14T09:09:40.995Z",
+            "date_done": "2024-02-14T09:09:40.995Z",
+            "traceback": null,
+            "meta": "{\"children\": []}"
+        }
+    }
+]

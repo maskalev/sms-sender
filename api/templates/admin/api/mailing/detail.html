@@ -1,0 +1,100 @@
+{% extends "admin/base_site.html" %}
+
+{% block title %}
+Mailing {{ mailing.id }} {{ block.super }}
+{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+  <a href="{% url 'admin:index' %}">Home</a> &rsaquo;
+  <a href="{% url 'admin:api_mailing_changelist' %}">Mailings</a>
+  &rsaquo;
+  <a href="{% url 'admin:api_mailing_change' mailing.id %}">Mailing {{ mailing.id }}</a>
+  &rsaquo; Detail
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="module">
+  <h1>Mailing {{ mailing.id }}</h1>
+  <table>
+    <tr>
+      <th>Created At</th>
+      <td>{{ mailing.created_at }}</td>
+    </tr>
+    <tr>
+      <th>Updated At</th>
+      <td>{{ mailing.updated_at }}</td>
+    </tr>
+    <tr>
+      <th>Datetime Start</th>
+      <td>{{ mailing.datetime_start }}</td>
+    </tr>
+    <tr>
+      <th>Datetime End</th>
+      <td>{{ mailing.datetime_end }}</td>
+    </tr>
+    <tr>
+      <th>Text</th>
+      <td>{{ mailing.text }}</a></td>
+    </tr>
+    <tr>
+      <th>Tags</th>
+      <td>{{ mailing.client_filter|default:"-" }}</td>
+    </tr>
+    <tr>
+      <th>Clients count</th>
+      <td>{{ mailing.clients_count }}</td>
+    </tr>
+    <tr>
+      <th>Created messages</th>
+      <td>{{ mailing.created_messages }}</td>
+    </tr>
+    <tr>
+      <th>Scheduled messages</th>
+      <td>{{ mailing.scheduled_messages }}</td>
+    </tr>
+    <tr>
+      <th>Delivered messages</th>
+      <td>{{ mailing.delivered_messages }}</td>
+    </tr>
+    <tr>
+      <th>Undelivered messages</th>
+      <td>{{ mailing.undelivered_messages }}</td>
+    </tr>
+    <tr>
+      <th>Cancelled messages</th>
+      <td>{{ mailing.cancelled_messages }}</td>
+    </tr>
+  </table>
+</div>
+<div class="module">
+  <h2>Messages</h2>
+  <table style="width:100%">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th>Datetime Send</th>
+        <th>Status</th>
+        <th>Client</th>
+        <th>Celery Task ID</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in mailing.mailing_messages.all %}
+      <tr class="row{% cycle " 1" "2" %}">
+        <td>{{ item.id }}</td>
+        <td>{{ item.created_at }}</td>
+        <td>{{ item.updated_at }}</td>
+        <td>{{ item.datetime_send }}</td>
+        <td>{{ item.get_status_display }}</td>
+        <td>{{ item.client }}</td>
+        <td>{{ item.celery_task_id }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

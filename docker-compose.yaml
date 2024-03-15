@@ -1,0 +1,74 @@
+version: "3.7"
+
+
+services:
+  db:
+    image: postgres:12.4
+    container_name: "fbrq_db"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    env_file:
+      - .env
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    networks:
+      - default
+
+  rabbitmq:
+    restart: always
+    container_name: "fbrq_rabbit"
+    image: rabbitmq:3-management-alpine
+    ports:
+      - 5672:5672
+      - 15672:15672
+    networks:
+      - default
+
+  app:
+    restart: always
+    container_name: "fbrq_app"
+    build: .
+    volumes:
+      - .:/code
+      - ./static:/code/static
+    command: gunicorn --bind 0.0.0.0:8000 fbrq_api.wsgi
+    ports:
+      - "8000:8000"
+    networks:
+      - default
+
+  celery:
+    restart: always
+    container_name: "fbrq_celery"
+    build: .
+    command: celery -A fbrq_api worker -l info
+    volumes:
+      - .:/code
+    env_file:
+      - ./.env
+    depends_on:
+      - app
+      - rabbitmq
+    environment:
+      - CELERY_BROKER_URL=amqp://guest:guest@rabbitmq:5672/
+      - DJANGO_SETTINGS_MODULE=fbrq_api.settings
+    networks:
+      - default
+
+  celery-beat:
+    restart: always
+    container_name: "fbrq_celery-beat"
+    build: .
+    command: celery -A fbrq_api beat -l info
+    env_file:
+      - ./.env
+    depends_on:
+      - app
+      - rabbitmq
+    environment:
+      - CELERY_BROKER_URL=amqp://guest:guest@rabbitmq:5672/
+    networks:
+      - default
+
+volumes:
+  postgres_data:
