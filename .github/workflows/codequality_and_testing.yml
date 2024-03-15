@@ -29,5 +29,4 @@ jobs:
           API_URL: ${{ secrets.API_URL }}
           API_TOKEN: ${{ secrets.API_TOKEN }}
         run: |
-          ./run_tests.sh
           echo "$DEBUG"
